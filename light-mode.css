@@ -1,0 +1,68 @@
+* {
+    transition: 0.2s;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.toogle {
+    display: none;
+}
+
+.toogle + label {
+    
+    width: 32px;
+    height: 16px;
+    background: rgb(0, 0, 0);
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    padding: 2px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.toogle + label::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    display: block;
+    border-radius: 50%;
+    right: unset;
+    left: 2px;
+    right: 2px;
+    transition: 200ms;
+}
+
+.toogle:checked + label {
+    background: black;
+}
+.toogle:checked + label:before {
+    content: '';
+    left: calc(100% - 22px);
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+}
+
+.bg-navbar {
+    background: rgb(165, 165, 165);
+
+}
+
+.bg-navbar ul li a {
+   color:black;
+
+}
+
+.bg-navbar li {
+    color:rgb(165, 165, 165);
+ 
+ }
+
+.logo {
+    color:black
+}
+
